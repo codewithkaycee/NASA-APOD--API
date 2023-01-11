@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-image: url("../img/astro-selfie.jpg") ;
+    background-size: cover;
+    background-color: black;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+img {
+    margin: auto;
+    display: none;
+  }
+div{
+    justify-content: right;
+    display: flex;
+    
+}
+iframe {
+    display: none;
+    margin: auto;
+  }
+  
+  div {
+    display: flex;
+    justify-content: right;
+  }
+  
+  section{
+    width: 100%;
+    margin: auto;
+  }
+  
+  section > img {
+    height: 500px;
+  }
+  
+  section > iframe {
+    width: 700px;
+    height: 500px;
+  }
+input{
+    border: none;
+    border-radius: 10px;
+    margin: 5px , 5px;
+    font-weight: 600;
+    font-style: italic;
+    width: 200px;
+    padding: 5px 10px;
+    background-color: rgba(128, 128, 128, 0.69);
+    cursor: pointer;
+}
+
+button {
+    background-color: rgba(135, 207, 235, 0.708);
+    color: rgb(0, 0, 0);
+    padding: 3px;
+    text-decoration: none;
+    border: 2px solid #ffffff83;
+    transition: 1s all ease;
+    border-radius: 10px;
+    margin: 4px 4px 5px 0;
+  }
+  
+  button:hover{
+    background: #0000006c;
+    color: white;
+    border: 1px solid white;
+    content: "";
+    transition: all 0.6s ease;
+    padding: 6px;
+  }
+h1{
+    color: rgba(255, 255, 255, 0.878);
+    font-weight: 900;
+    font-size: 6rem;
+    padding-top: 15rem;
+    text-align: center;
+    text-align: left;
+    margin: 0;
+    width: 50%;
+    text-shadow: 1px 1px 2px black, 0 0 1em rgba(0, 0, 255, 0.5), 0 0 0.2em rgba(0, 0, 255, 0.84);
+    letter-spacing: 0.1rem;
+    animation: fadeIn 3.5s;
+}
+
+h2{
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    bottom: 0;
+    width: auto;
+}
+h3{
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    bottom: 0;
+}
+
+p {
+    width: 70%;
+    margin: 10px auto 0 auto;
+    padding: 10px;
+    text-align: left;
+    color: white;
+    background: #ffffff3d;
+    border-radius: 15px;
+    display: none;
+  }
+  
+
+  @media only screen and (max-width: 768px) {
+    /* styles for screens with width less than 768px */
+    body {
+        font-size: 0.8rem; /* reduce font size */
+    }
+    h1 {
+        font-size: 2rem; /* reduce h1 font size */
+    }
+    section > img, section > iframe {
+        width: 90%; /* reduce width of images and iframes */
+        height: auto;
+    }
+    /* ...and any other element you want to adjust for smaller screens */
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* styles for screens with width between 769px and 1024px */
+    body {
+        font-size: 1rem;
+    }
+    /* ...and any other element you want to adjust for medium screens */
+}
+
+@media only screen and (min-width: 1025px) {
+    /* styles for screens with width greater than 1025px */
+    /* ...and any other element you want to adjust for larger screens */
+}
+
+  
